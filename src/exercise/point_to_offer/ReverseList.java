@@ -1,17 +1,17 @@
 package exercise.point_to_offer;
 
+import common.ListNode;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static common.CommonUtil.toArray;
+import static common.CommonUtil.toList;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ReverseList {
 
     @Test
     public void test() {
-        ListNode head = new ListNode(0, new ListNode(1));
-        ListNode reversed = reverse(head);
-        assertEquals(1, reversed.val);
-        assertEquals(0, reversed.next.val);
+        assertArrayEquals(new int[]{1, 0}, toArray(reverse(toList("0,1"))));
     }
 
     public ListNode reverse(ListNode head) {

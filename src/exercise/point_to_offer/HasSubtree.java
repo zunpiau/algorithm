@@ -3,7 +3,7 @@ package exercise.point_to_offer;
 import common.TreeNode;
 import org.junit.Test;
 
-import static common.TreeUtil.toTree;
+import static common.CommonUtil.toTree;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

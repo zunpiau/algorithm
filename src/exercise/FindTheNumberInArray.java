@@ -47,7 +47,7 @@ public class FindTheNumberInArray {
 
     /**
      * @see exercise.point_to_offer.MoreThanHalfNum#find(int[])
-     * 找出数组中出现次数多于一半的数，如果不存在返回 <code>Integer.MIN_VALUE<code/>;
+     * 找出数组中出现次数多于一半的数，如果不存在返回 <code>Integer.MIN_VALUE</code>;
      */
     public int findMoreThanHalfNumIfExist(int[] array) {
         if (array.length == 0) return 0;

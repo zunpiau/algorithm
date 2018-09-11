@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * 洗牌算法
- * <a href="https://coolshell.cn/articles/8593.html">如何测试洗牌程序<a/>
+ * <a href="https://coolshell.cn/articles/8593.html">如何测试洗牌程序</a>
  */
 public class FisherYatesShuffle {
 

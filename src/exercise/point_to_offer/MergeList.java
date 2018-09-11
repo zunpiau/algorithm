@@ -1,21 +1,19 @@
 package exercise.point_to_offer;
 
+import common.ListNode;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static common.CommonUtil.toArray;
+import static common.CommonUtil.toList;
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNull;
 
 public class MergeList {
 
     @Test
     public void test() {
-        ListNode list1 = new ListNode(0, new ListNode(2));
-        ListNode list2 = new ListNode(1, new ListNode(3));
-        ListNode merge = Merge(list1, list2);
-        assertEquals(0, merge.val);
-        assertEquals(1, merge.next.val);
-        assertEquals(3, merge.next.next.next.val);
-        assertEquals(1, Merge(null, list2).val);
+        assertArrayEquals(new int[]{0, 1, 2, 3}, toArray(Merge(toList("0,2"), toList("1,3"))));
+        assertArrayEquals(new int[]{1, 3}, toArray(Merge(null, toList("1,3"))));
         assertNull(Merge(null, null));
     }
 
